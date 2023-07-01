@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.cr-body{
+  background: url(/desk.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 120px;
+}
+.card{
+    margin-top: 50px;
+  }
+.container header {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+.container .formBox {
+  margin-top: 30px;
+}
+.formBox .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.formBox .input-box{
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+.formBox .input-box.w100 input, textarea{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  color: #707070;
+  margin-top: 0px;
+  resize: none;
+  padding: 5px 0;
+  font-size:  16px;
+  font-weight: 300;
+  border: none;
+  border-radius: 3px;
+  border-bottom: 1px solid #777;
+}
+
+.date input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none; /* Prevents outline on focus */
+  }
+
+.input-box input.has-value ~ label,
+.input-box textarea.has-value ~ label {
+  transform: translateY(-25px);
+  font-size: 12px;
+  padding-left: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.formBox .input-box.w100 input:focus ~ label,
+.formBox .input-box.w100 input:valid ~ label,
+.formBox .input-box textarea:focus ~ label,
+.formBox .input-box textarea:valid ~ label
+{
+  transform: translateY(-25px);
+  font-size: 12px;
+  padding-left: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #095a55;
+  font-weight: 500;
+}
+.formBox .input-box.w50 input{
+  outline: none;
+  font-size: 10px;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.formBox .input-box.w100 label{
+  position: absolute;
+  font-weight: bold;
+  top: 10px;
+  left: 0;
+  pointer-events: none;
+  font-size: 18px;
+  font-weight: 300;
+  transition: all 0.3s ease;  
+  padding: 5px 0;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.formBox button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6)
+}
+.formBox button:hover {
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6)
+}
+/*Responsive*/
+@media screen and (max-width: 1200px) {
+  .container {
+   width: 90%;
+    min-width: auto;
+  }
+  .card{
+    margin-top: 50px;
+  }
+  .container .rform{
+    position: relative;
+    width: clac(100% - 350px);
+    padding-left: 0;
+    margin-left: 0;
+    padding: 40px;
+    height: 550px;
+    box-shadow: none;
+  }
+}
